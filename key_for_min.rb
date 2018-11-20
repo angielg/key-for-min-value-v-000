@@ -6,8 +6,8 @@ def key_for_min_value(name_hash)
   minimum_value = nil
     name_hash.collect do |key, value|
       if minimum_value == nil || minimum_value > value
-        value == minimum_value
-        key == minimum_key
+        value = minimum_value
+        key = minimum_key
       end
     end
   return minimum_key
